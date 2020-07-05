@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart login page</title>
+</head>
+<body>
+    {% block body_block %}
+        <center>
+        <form>
+        <table>
+            <tr><td><label>Username</label></td></tr>
+            <tr><td><input type="text" name="name" id="name"></td></tr>
+            <tr><td><label>Password</label></td></tr>
+            <tr><td><input type="password" name="password" id="password"></td></tr>
+            <tr>
+                <td><input type="submit" value="Login"></td>
+                <td><input type="submit" value="Signup"></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    {% endblock body_block %}
+</body>
+</html>

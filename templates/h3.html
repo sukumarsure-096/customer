@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon data</title>
+</head>
+<body>
+    <table border='1px' padding='5px'>
+        <tr>
+            <th>AID</th>
+            <th>ANAME</th>
+            <TH>APRICE</TH>
+            <TH>CATID</TH>
+        </tr>
+        {% for i in a1 %}
+        <tr>
+            <td>{{i.aid}}</td>
+            <td>{{i.aname}}</td>
+            <td>{{i.aprice}}</td>
+            <td>{{i.catid}}</td>
+        </tr>
+        {% endfor %}
+
+
+    </table>
+</body>
+</html>

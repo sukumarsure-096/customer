@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category data</title>
+</head>
+<body>
+    <table border='1px' padding='5px'>
+        <tr>
+            <th>CAT ID</th>
+            <th>AGE</th>
+        </tr>
+        {% for i in c1 %}
+        <tr>
+            <td>{{i.catid}}</td>
+            <td>{{i.age}}</td>
+        </tr>
+        {% endfor %}
+
+
+    </table>
+</body>
+</html>

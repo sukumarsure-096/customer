@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart data</title>
+</head>
+<body>
+    <table border='1px' padding='5px'>
+        <tr>
+            <th>FID</th>
+            <th>FNAME</th>
+            <TH>FPRICE</TH>
+            <TH>CATID</TH>
+        </tr>
+        {% for i in f1 %}
+        <tr>
+            <td>{{i.fid}}</td>
+            <td>{{i.fname}}</td>
+            <td>{{i.fprice}}</td>
+            <td>{{i.catid}}</td>
+        </tr>
+        {% endfor %}
+
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart data</title>
+</head>
+<body>
+    <table border='1px' padding='5px'>
+        <tr>
+            <th>CID</th>
+            <th>CNAME</th>
+            <TH>CMOBILE</TH>
+            <TH>CADDRESS</TH>
+            <TH>FID</TH>
+            <TH>AID</TH>
+        </tr>
+        {% for i in cus1 %}
+        <tr>
+            <td>{{i.cid}}</td>
+            <td>{{i.cname}}</td>
+            <td>{{i.cmobile}}</td>
+            <td>{{i.caddress}}</td>
+            <td>{{i.fid}}</td>
+            <td>{{i.aid}}</td>
+        </tr>
+        {% endfor %}
+
+
+    </table>
+</body>
+</html>
